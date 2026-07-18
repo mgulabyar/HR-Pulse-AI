@@ -148,7 +148,6 @@ export default function App() {
       </AppBar>
 
       <Box sx={{ p: 4, width: "100%", maxWidth: "1700px", margin: "0 auto" }}>
-        {/* 3. CAPABILITIES ONE-LINERS */}
         <Stack direction="row" spacing={2} sx={{ mb: 4 }}>
           {[
             { label: "AI Gap Analysis", icon: <BrainCircuit size={16} /> },
@@ -180,7 +179,6 @@ export default function App() {
           ))}
         </Stack>
 
-        {/* 4. MAIN KANBAN BOARD */}
         <Box
           sx={{
             display: "grid",
