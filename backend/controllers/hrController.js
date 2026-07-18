@@ -2,7 +2,7 @@ const Job = require("../models/Job");
 const Candidate = require("../models/Candidate");
 const { screenCandidate } = require("../services/aiScreening.js");
 
-// 1. Process Application (Trigger AI Analysis)
+// 1. Process Application 
 exports.applyForJob = async (req, res) => {
   try {
     const { jobId, name, email, resumeText } = req.body;
