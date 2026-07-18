@@ -399,7 +399,6 @@ export default function App() {
         </Fade>
       </Modal>
 
-      {/* FOOTER */}
       <Box
         sx={{
           p: 4,
