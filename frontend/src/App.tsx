@@ -75,7 +75,6 @@ export default function App() {
     loadData();
   }, []);
 
-  // Update Candidate Status (Kanban Logic)
   const updateStatus = async (id: string, newStatus: string) => {
     try {
       await axios.patch(`http://localhost:5000/api/hr/status/${id}`, {
@@ -97,7 +96,6 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      {/* 2. STICKY MINIMALIST NAVBAR */}
       <AppBar
         position="sticky"
         elevation={0}
