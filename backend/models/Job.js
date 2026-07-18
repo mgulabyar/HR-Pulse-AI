@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const JobSchema = new mongoose.Schema({
   title: { type: String, required: true },
   department: String,
-  requirements: [String], // Array of skills
+  requirements: [String], // Array of 
   description: String,
   postedDate: { type: Date, default: Date.now },
 });
