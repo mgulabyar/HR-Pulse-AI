@@ -327,7 +327,6 @@ export default function App() {
         </Box>
       </Box>
 
-      {/* 5. AI DETAIL MODAL */}
       <Modal
         open={!!selectedCandidate}
         onClose={() => setSelectedCandidate(null)}
