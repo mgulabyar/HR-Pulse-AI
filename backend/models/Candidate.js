@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-// Define the  
+// Define the Candidate 
 const CandidateSchema = new mongoose.Schema({
   jobId: { type: mongoose.Schema.Types.ObjectId, ref: "Job" },
   name: { type: String, required: true },
