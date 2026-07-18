@@ -9,10 +9,8 @@ exports.applyForJob = async (req, res) => {
     const job = await Job.findById(jobId);
     if (!job) return res.status(404).json({ message: "Job post not found" });
 
-    // AI Logic Trigger
     const analysis = await screenCandidate(job.description, resumeText);
 
-    // Extract score from text (simple logic for portfolio)
     const scoreMatch = analysis.match(/MATCH SCORE:\s*(\d+)/);
     const aiScore = scoreMatch ? parseInt(scoreMatch[1]) : 0;
 
