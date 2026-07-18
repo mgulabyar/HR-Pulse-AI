@@ -60,7 +60,6 @@ export default function App() {
   );
   const [loading, setLoading] = useState(true);
 
-  // Fetch Dashboard Data
   const loadData = async () => {
     try {
       const res = await axios.get("http://localhost:5000/api/hr/dashboard");
