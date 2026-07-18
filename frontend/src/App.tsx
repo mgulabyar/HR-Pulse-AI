@@ -19,11 +19,8 @@ import {
   Fade,
 } from "@mui/material";
 import {
-
-
   Search,
   Bell,
-
   FileText,
   Activity,
   Layers,
@@ -32,7 +29,7 @@ import {
 } from "lucide-react";
 import axios from "axios";
 
-// --- 1. THEME & INTERFACES ---
+
 const theme = createTheme({
   palette: {
     mode: "light",
