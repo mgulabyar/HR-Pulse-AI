@@ -1,6 +1,5 @@
 const OpenAI = require('openai');
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-// This service handles AI-driven
 const screenCandidate = async (jobJD, candidateResume) => {
   const systemPrompt = `
     ROLE: You are a Principal Technical Recruiter and Talent Acquisition Specialist at a Fortune 500 tech firm.
