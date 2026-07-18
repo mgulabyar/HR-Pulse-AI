@@ -29,7 +29,6 @@ exports.applyForJob = async (req, res) => {
   }
 };
 
-// 2. Update Kanban Status
 exports.updateCandidateStatus = async (req, res) => {
   try {
     const { id } = req.params;
@@ -45,7 +44,6 @@ exports.updateCandidateStatus = async (req, res) => {
   }
 };
 
-// 3. Get Dashboard Data
 exports.getHRDashboard = async (req, res) => {
   try {
     const candidates = await Candidate.find().populate("jobId");

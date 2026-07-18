@@ -9,7 +9,6 @@ app.use(express.json());
 
 app.use('/api/hr', require('./routes/hrRoutes'));
 
-// SEED DATA FOR TESTING
 app.post('/api/hr/seed-job', async (req, res) => {
   const Job = require('./models/Job');
   await Job.deleteMany({});
